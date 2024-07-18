@@ -3,7 +3,7 @@ This is a web-based password manager application built with Flask, MySQL, Flask-
 
 Features
 User registration and login functionality with hashed passwords
-Secure storage of passwords using encryption (Fernet symmetric encryption)
+Secure storage of passwords using encryption 
 Password retrieval functionality
 User authentication with Flask-Login
 Requirements
