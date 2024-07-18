@@ -1,0 +1,147 @@
+/* Reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #09131D; /* Dark and modern background color */
+  color: #FFFFFF; /* Font color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  background: url('https://www.teksystems.com/cdn-cgi/image/height=605,width=813,quality=95,format=webp/https://www.teksystems.com/-/media/teksystems/images/blogs/blog%20images/cybersecurity-talent-gap.png?iar=0&rev=2a71ae59b0d54472b5ad1648db59318b&hash=0A95F83DAE5694F9B6AE058E9C55E4C4') no-repeat center center fixed;
+  background-size: cover; /* Ensures the background image covers the entire area */
+  opacity: 0.2; /* Adjust opacity as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures the pseudo-element is behind all content */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+  z-index: 1; /* Ensures content is above the pseudo-element */
+}
+
+.side-content {
+  text-align: left;
+}
+
+.vault-guard {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 4rem; /* Increased size */
+  margin-bottom: 10px; /* No gap */
+  text-align: left;
+}
+
+.tagline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 2rem; /* Increased size */
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.login-box {
+  background-color: rgba(27, 40, 54, 0.4); /* Increased glass effect */
+  padding: 70px;
+  border-radius: 20px;
+  border: 2px solid #05FFD2; /* Border color */
+  backdrop-filter: blur(10px); /* Glass effect */
+  box-shadow: 0 0 10px #05FFD2; /* Glow effect on the border */
+  max-width: 400px;
+  width: 100%;
+  height: 400px; /* Making it a square */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(5px); /* Glass effect */
+  color: #FFFFFF;
+}
+
+.submit-button {
+  background-color: #09131D;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 40px;
+  border: 2px solid #07da9e;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #05FFD2;
+  color: #09131D;
+}
+
+.register-prompt {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.register-link {
+  color: #05FFD2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
